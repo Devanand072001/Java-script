@@ -68,9 +68,9 @@ console.log('inter linked objects');
 function marry(groom, bride) {
     groom.wife = bride;
     bride.husband = groom;
-    return{
-        father : groom,
-        mother : bride
+    return {
+        father: groom,
+        mother: bride
     }
 };
 

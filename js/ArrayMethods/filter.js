@@ -7,7 +7,7 @@ const people = [
 
 ];
 
-const young = people.filter( (person) => person.age <= 25);
+const young = people.filter((person) => person.age <= 25);
 console.log(young);
 
 const students = people.filter((student) => student.destination == 'student');

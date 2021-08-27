@@ -1,31 +1,31 @@
 'use strict';
 
-function greeting (){
+function greeting() {
     console.log("hi");
 }
 
 let hi = greeting;
 hi();
 
-let hello = function(){
+let hello = function () {
     console.log('hello');
 }
 hello();
 
 // call back functions
 
-function askMarried(yes, no){
+function askMarried(yes, no) {
     let response = confirm("Are you married?");
-    if(response){
+    if (response) {
         yes();
-    }else{
+    } else {
         no();
     }
 }
-function married(){
+function married() {
     alert("You are married");
 }
-function single(){
+function single() {
     alert("you are single");
 }
 
