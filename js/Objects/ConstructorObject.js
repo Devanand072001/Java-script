@@ -25,6 +25,6 @@ console.log(student1.age);
 // Symbols 
 console.log("symbols");
 let id = Symbol("symbol id");
-console.log("%c"+id.toString(),"color:blue; font-size:50px");
-console.log("%c"+id.description,"color:blue; font-size:50px");
+console.log("%c" + id.toString(), "color:blue; font-size:50px");
+console.log("%c" + id.description, "color:blue; font-size:50px");
 

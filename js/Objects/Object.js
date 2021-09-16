@@ -11,11 +11,17 @@ console.table(sampleObj);
 
 console.log(sampleObj.name);
 console.log(sampleObj['age']);
+
 let obj = {
-    name: 'bob',
+    firstName: 'bob',
+    lastName: 'John',
     age: 29,
-    unwanted: 'sdfsdfsdf'
+    unwanted: 'sdfsdfsdf',
+    displayName : function(){
+        alert(this.firstName+" "+this.lastName);
+    }
 };
+
 //check availability
 console.log('unwanted' in obj);
 
