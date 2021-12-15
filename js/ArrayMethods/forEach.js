@@ -12,3 +12,13 @@ const person = [
 // }
 let pos = person.forEach((people) => console.log(people.position));
 
+
+console.log("Array foreach");
+let arr = [10, 20, 30, 40, 50];
+console.log(
+    arr.forEach((element, index) => {
+        console.log(element+" "+ index)
+    })
+);
+console.table(arr);
+console.table(person);
