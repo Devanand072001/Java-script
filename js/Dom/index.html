@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object sample</title>
+</head>
+<body>
+    <div id="para">
+        <p class="pa">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="pa">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, quaerat.</p>
+        <p class="select">Lorem ipsum dolor sit amet.</p>
+    </div>
+   
+    <!-- <script src="tagDom.js"></script> -->
+    <script>
+        var paras = document.getElementsByTagName('p');
+        // console.table(paras);
+        var i = 0;
+        for(var p of paras){
+            p.style.color = "#32a852";
+        }
+        // for(var i = 0; i < paras.length; i++) {
+        //     paras[i].style.color = "blue";           
+        // }
+        
+        console.log(document.querySelector("#para .select").style.color = "#530275");
+        for(var i of document.querySelectorAll("#para .pa")) {
+            i.style.color = "#c7691c";
+        }
+    </script>
+</body>
+</html>
